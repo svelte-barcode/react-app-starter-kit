@@ -4,8 +4,10 @@
   "private": true,
   "dependencies": {
     "material-ui": "^1.0.0-beta.34",
+    "node-sass-chokidar": "0.0.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
