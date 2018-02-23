@@ -18,7 +18,7 @@ const store = createStore(
   applyMiddleware(thunk)
 )
 
-const theme = configureTheme()
+const theme = configureTheme();
 
 ReactDOM.render(
   <MuiThemeProvider theme={theme}>

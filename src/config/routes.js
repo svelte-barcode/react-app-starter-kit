@@ -9,7 +9,7 @@ export default (
   <BrowserRouter>
     <div>
       <App>
-        <Route exact path='/homes' component={Home} />
+        <Route exact path='/' component={Home} />
       </App>
     </div>
   </BrowserRouter>
