@@ -4,6 +4,33 @@ React Starter Kit is a React framework base on create-react-app built on top of 
 
 React App Starter Kit is a solid starting point for both professionals and newcomers to the Javascript world.
 
+## Folder structure
+
+```
+react-app-starter-kit
+├── README.md
+├── node_modules
+├── package.json
+├── .gitignore
+├── public
+│   └── favicon.ico
+│   └── index.html
+│   └── manifest.json
+└── src
+    └── assets
+    └── components
+    └── actions
+    └── config
+    └── constants
+    └── reducers
+    └── tests
+    └── theme
+    ├── views
+    │   └── layouts
+    └── index.js
+    └── registerServiceWorker.js
+```
+
 ## Contributing
 
 We'd love to have your helping hand on react-app-starter-kit!
