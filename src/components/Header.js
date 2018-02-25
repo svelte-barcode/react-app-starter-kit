@@ -11,6 +11,7 @@ import Hidden from 'material-ui/Hidden';
 import Drawer from 'material-ui/Drawer';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
+import { Link } from 'react-router-dom';
 
 const drawerWidth = 240;
 
@@ -57,13 +58,13 @@ class Header extends React.Component {
         </div>
         <Divider />
         <List>
-          <ListItem button>
+          <ListItem button component={Link} to='/'>
             <ListItemText primary="Dashboard" />
           </ListItem>
         </List>
         <Divider />
         <List>
-          <ListItem button>
+          <ListItem button component={Link} to='/users'>
             <ListItemText primary="User" />
           </ListItem>
         </List>

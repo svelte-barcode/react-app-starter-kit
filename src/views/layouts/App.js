@@ -42,7 +42,7 @@ class App extends React.Component {
           <div className={classes.appFrame}>
             <Header />
             <main className={classes.content}>
-              <Typography noWrap>{'You think water moves fast? You should see ice.'}</Typography>
+              {this.props.children}
             </main>
           </div>
         </div>
