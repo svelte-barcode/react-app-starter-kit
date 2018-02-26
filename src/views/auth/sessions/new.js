@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+
+import Signin from '../../../components/auth/Signin';
 
 const Login = ({  classes }) => {
   return (
     <div>
-      Login
+      <Signin />
     </div>
   );
 };

@@ -34,7 +34,7 @@ const styles = theme => ({
 
 class App extends React.Component {
   render() {
-    const { classes, theme } = this.props;
+    const { classes } = this.props;
 
     return (
       <Grid container>
