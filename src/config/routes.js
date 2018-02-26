@@ -1,31 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Route, Link, Match, Redirect, Switch } from 'react-router-dom';
 
-import AppLayout from '../views/layouts/App';
-import LoginLayout from '../views/layouts/Login';
-import Home from '../views/homes/index';
+import LoginLayoutRoute from './loginLayoutRoute';
+import AppLayoutRoute from './appLayoutRoute';
+
 import Login from '../views/auth/sessions/new';
+import Home from '../views/homes/index';
 import User from '../views/users';
-
-const AppLayoutRoute = ({component: Component, ...rest}) => {
-  return (
-    <Route {...rest} render={matchProps => (
-      <AppLayout>
-          <Component {...matchProps} />
-      </AppLayout>
-    )} />
-  )
-};
-
-const LoginLayoutRoute = ({component: Component, ...rest}) => {
-  return (
-    <Route {...rest} render={matchProps => (
-      <LoginLayout>
-          <Component {...matchProps} />
-      </LoginLayout>
-    )} />
-  )
-};
 
 export default (
   <BrowserRouter>
