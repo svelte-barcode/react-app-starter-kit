@@ -58,7 +58,7 @@ class Header extends React.Component {
         </div>
         <Divider />
         <List>
-          <ListItem button component={Link} to='/'>
+          <ListItem button component={Link} to='/homes'>
             <ListItemText primary="Dashboard" />
           </ListItem>
         </List>

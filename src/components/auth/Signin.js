@@ -8,6 +8,8 @@ import Typography from 'material-ui/Typography';
 import { FormControl } from 'material-ui/Form';
 import Input, { InputLabel, InputAdornment } from 'material-ui/Input';
 import EmailIcon from 'material-ui-icons/Email';
+import LockIcon from 'material-ui-icons/Lock';
+import Button from 'material-ui/Button';
 
 const renderEmail = ({ classes, input, type, meta: { touched, error } }) => {
   return (
@@ -15,9 +17,22 @@ const renderEmail = ({ classes, input, type, meta: { touched, error } }) => {
       <InputLabel>Email</InputLabel>
       <Input {...input} type={type} endAdornment={
         <InputAdornment position="end">
-          <EmailIcon />
+          <EmailIcon color="primary" />
         </InputAdornment>
       } />
+    </FormControl>
+  )
+}
+
+const renderPassword = ({ classes, input, type, meta: { touched, error } }) => {
+  return (
+    <FormControl fullWidth className="mb24">
+      <InputLabel>Password</InputLabel>
+      <Input {...input} type={type} endAdornment={
+        <InputAdornment position="end">
+          <LockIcon color="primary" />
+        </InputAdornment>
+      }/>
     </FormControl>
   )
 }
@@ -39,6 +54,17 @@ class Signin extends Component {
             component={renderEmail}
             classes={classes}
           />
+
+          <Field
+            name="password"
+            type="password"
+            component={renderPassword}
+            classes={classes}
+          />
+
+          <Button variant="raised" color="primary">
+            Primary
+          </Button>
         </form>
       </div>
     );
