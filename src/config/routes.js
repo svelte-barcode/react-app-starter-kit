@@ -10,18 +10,16 @@ import User from '../views/users';
 
 export default (
   <BrowserRouter>
-    <div>
-      <Switch>
-        <Route exact path="/">
-          <Redirect to="/signin" />
-        </Route>
+    <Switch>
+      <Route exact path="/">
+        <Redirect to="/signin" />
+      </Route>
 
-        <LoginLayoutRoute path="/signin" component={Login} />
-        
-        <AppLayoutRoute path="/homes" component={Home} />
+      <LoginLayoutRoute path="/signin" component={Login} />
+      
+      <AppLayoutRoute path="/homes" component={Home} />
 
-        <AppLayoutRoute path="/users" component={User} />
-      </Switch>
-    </div>
+      <AppLayoutRoute path="/users" component={User} />
+    </Switch>
   </BrowserRouter>
 );
