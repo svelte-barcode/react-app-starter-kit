@@ -19,6 +19,7 @@ react-app-starter-kit
 └── src
     └── assets
     └── components
+    └── containers
     └── actions
     └── config
     └── constants
