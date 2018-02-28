@@ -10,6 +10,7 @@ import Input, { InputLabel, InputAdornment } from 'material-ui/Input';
 import EmailIcon from 'material-ui-icons/Email';
 import LockIcon from 'material-ui-icons/Lock';
 import Button from 'material-ui/Button';
+import Grid from 'material-ui/Grid';
 
 const renderEmail = ({ classes, input, type, meta: { touched, error } }) => {
   return (
@@ -44,7 +45,7 @@ class Signin extends Component {
     return (
       <div>
         <form>
-          <Typography type="title" align="center" className="mb24">
+          <Typography variant="display1" align="center" className="mb24">
               Login
           </Typography>
 
@@ -62,9 +63,11 @@ class Signin extends Component {
             classes={classes}
           />
 
-          <Button variant="raised" color="primary">
-            Primary
-          </Button>
+          <p>
+            <Button variant="raised" color="primary">
+              login
+            </Button>
+          </p>
         </form>
       </div>
     );
