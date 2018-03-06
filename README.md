@@ -38,7 +38,7 @@ react-app-starter-kit
 
 react-app-starter-kit come with App and Login layout by default, with most of the options to render, the rendered content is displayed as part of the current layout. You'll learn more about layouts and how to use them in this guide.
 
-You can use the `LoginLayoutRoute` or `AppLayoutRoute` option to tell react-app-starter-kit to use a specific layout for the current component:
+You can use the `AppLayoutRoute` or `LoginLayoutRoute` option to tell react-app-starter-kit to use a specific layout for the current component:
 
 ```
 <LoginLayoutRoute path="/signin" component={Login} />
