@@ -53,38 +53,19 @@ You can create a new layout by creating a layout file in `src/views/layouts` fol
 ```
 // Report.js
 
-import React from 'react';
-
+import React, { Component } from 'react';
 import Grid from 'material-ui/Grid';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
-import Typography from 'material-ui/Typography';
-import Header from '../../components/Header';
-
+  
 const styles = theme => ({
-  root: {
-    width: '100%',
-    height: '100%',
-    zIndex: 1,
-    overflow: 'hidden'
+  container: {
+    marginTop: theme.spacing.unit * 7
   },
-  appFrame: {
-    position: 'relative',
-    display: 'flex',
-    width: '100%',
-    height: '100%',
-  },
-  content: {
-    backgroundColor: theme.palette.background.default,
-    width: '100%',
-    padding: theme.spacing.unit * 3,
-    height: 'calc(100% - 56px)',
-    marginTop: 56,
-    [theme.breakpoints.up('sm')]: {
-      height: 'calc(100% - 64px)',
-      marginTop: 64,
-    },
-  },
+  center: {
+    padding: theme.spacing.unit * 2,
+    textAlign: 'center'
+  }
 });
 
 class Report extends React.Component {
@@ -92,22 +73,19 @@ class Report extends React.Component {
     const { classes } = this.props;
 
     return (
-      <Grid container>
-        <div className={classes.root}>
-          <div className={classes.appFrame}>
-            <Header />
-            <main className={classes.content}>
-              {this.props.children}
-            </main>
-          </div>
-        </div>
-      </Grid>
+      <div>
+        <Grid container spacing={24} alignItems={'center'} justify={'center'} direction={'row'} className={classes.container}>
+          <Grid item xs={6} sm={3} className={classes.center}>
+            {this.props.children}
+          </Grid>
+        </Grid>
+      </div>
     );
   }
-};
+}
 
-App.propTypes = {
-  classes: PropTypes.object.isRequired
+Report.propTypes = {
+  classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles, { withTheme: true })(Report);
