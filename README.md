@@ -137,3 +137,7 @@ You also can set the default paths, URLs:
 We'd love to have your helping hand on react-app-starter-kit!
 
 Your contributions are heartily ♡ welcome. (✿◠‿◠)
+
+## License
+
+[MIT License](http://www.opensource.org/licenses/mit-license.php)
