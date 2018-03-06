@@ -34,6 +34,10 @@ react-app-starter-kit
     └── registerServiceWorker.js
 ```
 
+## Router
+
+Router recognizes URLs and dispatches them to a view. It can also generate paths and URLs.
+
 ## Contributing
 
 We'd love to have your helping hand on react-app-starter-kit!
