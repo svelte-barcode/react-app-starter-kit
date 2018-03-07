@@ -10,7 +10,7 @@ export default (state = INITIAL_STATE, action) => {
     case AUTH_USER:
       return { ...state, authenticated: true, message: '' };
     case UNAUTH_USER:
-      return { ...state, authenticated: false };
+      return { ...state, authenticated: false, message: '' };
   }
 
   return state;
