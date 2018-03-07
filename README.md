@@ -22,16 +22,15 @@ react-app-starter-kit
 │   └── manifest.json
 └── src
     └── assets
-    └── components
-    └── containers
-    └── actions
     └── config
     └── constants
+    └── containers
+    └── components
+    └── actions
     └── reducers
-    └── utils
-    └── theme
     ├── views
     │   └── layouts
+    └── utils
     └── index.js
     └── registerServiceWorker.js
 ```
