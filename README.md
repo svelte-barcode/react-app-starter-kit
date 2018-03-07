@@ -1,8 +1,10 @@
 # React App Starter Kit
 
-React Starter Kit is a React framework base on create-react-app built on top of React, React-redux, Redux-form, Redux-thunk, Material-ui, React-router &   GraphQL (Addition NodeJS, ExpressJS). Helping you to stay productive following the best practices.
+React App Starter Kit is a React framework base on create-react-app built on top of React, React-redux, Redux-form, Redux-thunk, Material-ui, React-router & GraphQL (Addition NodeJS, ExpressJS).
 
-React App Starter Kit is a solid starting point for both professionals and newcomers to the Javascript world.
+React App Starter Kit help you to stay productive following the best practices.
+
+React App Starter Kit is a solid starting point for both professionals and newcomers to the Reactjs environments.
 
 ![React App Starter Kit](https://github.com/reactappstarterkit/reactappstarterkit.github.io/blob/master/images/signin-screen.png "React App Starter Kit")
 
