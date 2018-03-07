@@ -26,7 +26,7 @@ react-app-starter-kit
     └── config
     └── constants
     └── reducers
-    └── tests
+    └── utils
     └── theme
     ├── views
     │   └── layouts
